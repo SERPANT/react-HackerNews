@@ -56,4 +56,66 @@ code {
 
 .header {
   position: relative;
+
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.page-item {
+  list-style: none;
+  display: inline;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 15px 20px;
+}
+
+.page-item:hover {
+  /* background-color: rgba(255, 96, 96, 1); */
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  /* box-shadow: 1px 10px 10px 2px black; */
+  box-shadow: 1px 5px 10px 0px black;
+}
+
+.pages-container {
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 60px;
+}
+
+.page-item.active-page {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px 0px black;
+}
+
+.none {
+  display: none;
+}
+
+.tab {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-top: 15px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
 }
