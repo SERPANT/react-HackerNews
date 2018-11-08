@@ -26,9 +26,14 @@ class NewsItem extends Component {
   getComments() {}
   render() {
     if (this.state.newsObject !== undefined) {
-      let kids = this.state.newsObject.kids.map(number => {
-        return <li key={number}>{number}</li>;
-      });
+      let kids;
+      if (this.state.newsObject.kids !== undefined) {
+        kids = this.state.newsObject.kids.map(number => {
+          return <li key={number}>{number}</li>;
+        });
+      } else {
+        kids = null;
+      }
       let newsObject = this.state.newsObject;
       return (
         <div className="news-info-page">

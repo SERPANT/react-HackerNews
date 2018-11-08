@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div className="header">
         <TopHeader />
-        <NavBar tabChange={this.props.tabChange} />
+        <NavBar />
       </div>
     );
   }

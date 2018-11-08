@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 class TabItem extends Component {
-  clickHandler() {
-    this.props.tabChange(this.props.text);
-  }
-
   render() {
     return (
-      <button className="tablinks" onClick={this.clickHandler.bind(this)}>
+      //<button className="tablinks">{this.props.text}</button>
+      <Link className="tablinks" to={{ pathname: this.props.linkPath }}>
         {this.props.text}
-      </button>
+      </Link>
     );
   }
 }

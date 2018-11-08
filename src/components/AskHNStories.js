@@ -4,7 +4,7 @@ import Card from "./Card";
 import NewsList from "./NewsList";
 import PageList from "./PageList";
 
-class Home extends Component {
+class AskHNStories extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,8 +36,10 @@ class Home extends Component {
   }
 
   componentWillMount() {
+    // https://hacker-news.firebaseio.com/v0/askstories.json
+    // https://hacker-news.firebaseio.com/v0/jobstories.json
     axios
-      .get("https://hacker-news.firebaseio.com/v0/topstories.json")
+      .get("https://hacker-news.firebaseio.com/v0/askstories.json")
       .then(result => {
         this.setState({ idList: result });
         let noOfPage = Math.floor(result.data.length / 11);
@@ -79,7 +81,6 @@ class Home extends Component {
         return null;
       }
     });
-
     return (
       <div>
         <NewsList displayPageContent={displayPageContent} />
@@ -94,4 +95,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default AskHNStories;
