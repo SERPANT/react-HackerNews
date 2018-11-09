@@ -11,15 +11,13 @@ class Comment extends Component {
   }
 
   render() {
-    if (this.props.kids != undefined) {
+    if (this.props.kids !== undefined) {
       this.commentChildren = this.props.subCommentList.map(commentObject => {
-        if (this.props.id == commentObject.parent) {
+        if (this.props.id === commentObject.parent) {
           let commentDate = null;
           if (this.props.convert != undefined) {
             commentDate = this.props.convert(commentObject.time);
           }
-
-          //  console.log(commentObject.time);
           let child = (
             <Comment
               key={commentObject.id}

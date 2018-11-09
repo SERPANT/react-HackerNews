@@ -97,8 +97,9 @@ class NewsItem extends Component {
         .get("https://hacker-news.firebaseio.com/v0/item/" + news + ".json")
         .then(result => {
           // let newArrayList = this.state.commentList;
+
           // newArrayList.push(result.data);
-          if (result.data.parent != this.itemId) {
+          if (result.data.parent !== parseInt(this.itemId)) {
             let newArrayList = this.state.subCommentList;
             newArrayList.push(result.data);
             //   console.log("new child");
@@ -143,7 +144,7 @@ class NewsItem extends Component {
     let date = a.getDate();
     let hour = a.getHours();
     let min = a.getMinutes();
-    let sec = a.getSeconds();
+
     let time = month + " " + date + " ," + year + " @ " + hour + ":" + min;
     return time;
   }
