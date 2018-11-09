@@ -37,9 +37,16 @@ class Comment extends Component {
       });
     }
 
-    let shift = parseInt(this.props.commentLayer) * 100 + "px";
+    let shift = parseInt(this.props.commentLayer) * 50 + "px";
+    let wid;
+    if (this.props.commentLayer == 1) {
+      wid = "90%";
+    } else {
+      wid = "100%";
+    }
+
     return (
-      <div className="comment" style={{ marginLeft: shift }}>
+      <div className="comment" style={{ marginLeft: shift, width: wid }}>
         <div className="clearfix">
           <div className="comment-icon-container">
             <Icon

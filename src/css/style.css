@@ -56,6 +56,8 @@ code {
   font-size: 40px;
   position: absolute;
   margin-left: 25px;
+  top: 18px;
+  color: black;
 }
 
 .header {
@@ -208,4 +210,8 @@ code {
   font-size: 20px;
   text-align: center;
   margin-top: 40px;
+}
+
+.page-discription {
+  margin-top: 30px;
 }
