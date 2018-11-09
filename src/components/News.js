@@ -1,6 +1,6 @@
+import NewsItem from "./NewsItem";
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import NewsItem from "./NewsItem";
 
 class News extends Component {
   render() {

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
 import axios from "axios";
 import Card from "./Card";
 import NewsList from "./NewsList";
 import PageList from "./PageList";
+import React, { Component } from "react";
 
 class AskHNStories extends Component {
   constructor(props) {
@@ -36,8 +36,6 @@ class AskHNStories extends Component {
   }
 
   componentWillMount() {
-    // https://hacker-news.firebaseio.com/v0/askstories.json
-    // https://hacker-news.firebaseio.com/v0/jobstories.json
     axios
       .get("https://hacker-news.firebaseio.com/v0/askstories.json")
       .then(result => {

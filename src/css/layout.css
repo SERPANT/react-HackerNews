@@ -1,3 +1,12 @@
 .App {
   margin-left: 20px;
 }
+
+.news-info-page-container {
+  max-width: 85em;
+  margin: 0 auto;
+}
+
+.comment-list-container {
+  width: 100%;
+}

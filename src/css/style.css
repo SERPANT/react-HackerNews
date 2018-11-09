@@ -41,6 +41,10 @@ code {
   color: white;
 }
 
+.news-list-title {
+  font-weight: bold;
+}
+
 .page-icon {
   width: 50px;
   padding: 0px;
@@ -121,4 +125,80 @@ code {
 
 .tab a.active {
   background-color: #ccc;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #3399cc;
+}
+
+.comment-list {
+  list-style: none;
+  width: 100%;
+}
+
+.page-author {
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.page-author::before {
+  content: "by";
+}
+
+.news-info-page {
+  width: 92.888888%;
+  margin-top: 50px;
+}
+
+.comment-icon {
+  width: 100%;
+}
+
+.comment-detail-container {
+  float: right;
+  width: 92%;
+  overflow: hidden;
+  margin-left: 35px;
+}
+
+.comment-icon-container {
+  float: left;
+  width: 5%;
+}
+
+.comment-date {
+  margin-top: 3px;
+  color: gray;
+}
+
+.comment-discription {
+  margin-top: 15px;
+}
+
+.comment-item {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.title-container {
+  text-align: center;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  font-weight: 10;
+  width: 100%;
+  font-style: italic;
+}
+
+.title-container h1 a {
+  color: #3399cc;
+}
+
+.title-container h1 a:hover {
+  text-decoration: underline;
+}
+
+.comment {
+  width: 100%;
 }
