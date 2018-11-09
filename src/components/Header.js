@@ -1,4 +1,3 @@
-import NavBar from "./NavBar";
 import TopHeader from "./ToplHeader";
 import React, { Component } from "react";
 
@@ -7,7 +6,6 @@ class Header extends Component {
     return (
       <div className="header">
         <TopHeader />
-        <NavBar />
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import axios from "axios";
 import Card from "./Card";
+import NavBar from "./NavBar";
 import NewsList from "./NewsList";
 import PageList from "./PageList";
 import React, { Component } from "react";
@@ -81,6 +82,7 @@ class AskHNStories extends Component {
     });
     return (
       <div>
+        <NavBar />
         <NewsList displayPageContent={displayPageContent} />
         <PageList
           pageContainerClass={this.state.loaded ? "" : "none"}

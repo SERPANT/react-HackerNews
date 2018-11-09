@@ -145,7 +145,7 @@ code {
 }
 
 .page-author::before {
-  content: "by";
+  content: "by:";
 }
 
 .news-info-page {
@@ -179,7 +179,6 @@ code {
 }
 
 .comment-item {
-  margin-top: 60px;
   width: 100%;
 }
 
@@ -200,5 +199,13 @@ code {
 }
 
 .comment {
+  margin-top: 60px;
   width: 100%;
+}
+
+.comment-list.no-comment {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
